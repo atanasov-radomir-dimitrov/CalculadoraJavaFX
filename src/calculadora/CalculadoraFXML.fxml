@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculadora.CalculadoraFXMLController">
+    <children>
+        <Pane fx:id="pane" prefHeight="427.0" prefWidth="553.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="boton1" layoutX="190.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="1">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton2" layoutX="283.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="2">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton3" layoutX="375.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="3">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton4" layoutX="190.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="4">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton5" layoutX="283.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="5">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton6" layoutX="375.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="6">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton7" layoutX="190.0" layoutY="166.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="7">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton8" layoutX="283.0" layoutY="166.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="8">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton9" layoutX="375.0" layoutY="166.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="9">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonSuma" layoutX="467.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredOrange" onMouseExited="#mouseExitedOrange" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: orange;" text="+">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonResta" layoutX="467.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredOrange" onMouseExited="#mouseExitedOrange" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: orange;" text="-">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonMult" layoutX="467.0" layoutY="166.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredOrange" onMouseExited="#mouseExitedOrange" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: orange;" text="x">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="boton0" layoutX="283.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredLightgrey" onMouseExited="#mouseExitedLightgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: lightgrey;" text="0">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonC" layoutX="375.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="C">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonDiv" layoutX="467.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredOrange" onMouseExited="#mouseExitedOrange" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: orange;" text="÷">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonComa" layoutX="375.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text=",">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonIgual" layoutX="467.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredOrange" onMouseExited="#mouseExitedOrange" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: orange;" text="=">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonMasMenos" layoutX="190.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="±">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonE" layoutX="96.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="e">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button fx:id="botonPi" layoutX="96.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="π">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Label fx:id="display" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="35.0" prefHeight="60.0" prefWidth="543.0" style="-fx-background-color: black; -fx-text-fill: white;">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+            <MenuBar prefHeight="29.0" prefWidth="555.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuClose" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#menuAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Button fx:id="botonCos" layoutX="4.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="cos">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonSin" layoutX="4.0" layoutY="296.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="sin">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonTan" layoutX="4.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="tan">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonSecreto" layoutX="190.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="Sorpresa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonOnOff" layoutX="96.0" layoutY="231.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="on/off">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="126.0" fitWidth="178.0" layoutX="6.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@infinito.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="botonHora" layoutX="283.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleButtonAction" onMouseEntered="#mouseEnteredDarkgrey" onMouseExited="#mouseExitedDarkgrey" prefHeight="60.0" prefWidth="85.0" style="-fx-background-color: darkgrey;" text="Hora">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Separator layoutX="184.0" layoutY="101.0" orientation="VERTICAL" prefHeight="321.0" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
